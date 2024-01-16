@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Time_Counter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Time Counter/Count Down" Height="450" Width="800">
     <Grid>
+
+        <TextBlock Name="TBCountDown" Width="300" Height="150" TextAlignment ="Center" FontSize="70" FontFamily="Segoe UI Light">
+
+        </TextBlock>
+        <TextBox x:Name="TBTime" HorizontalAlignment="Left" Margin="123,48,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CBActions" HorizontalAlignment="Left" Margin="590,44,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="TBTimeName" HorizontalAlignment="Left" Margin="35,48,0,0" TextWrapping="Wrap" Text="Time(Sec): " VerticalAlignment="Top" RenderTransformOrigin="1.75,-1.75" Height="17" Width="40"/>
+        <Button x:Name="BStart" Content="Start" HorizontalAlignment="Left" Margin="171,359,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BStop" Content="Stop" HorizontalAlignment="Left" Margin="561,359,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BReset" Content="Reset" HorizontalAlignment="Left" Margin="364,359,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
